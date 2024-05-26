@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+<form id="form">
+    <section id="addSection">
+        <label id="textForm">
+            <input type="text" id="addInput" placeholder="Назва товару">
+            <button id="addButton" class="tooltip" data-tooltip="Додати товар">Додати
+                <span class="tooltiptext"></span>
+            </button>
+        </label>
+        <hr/>
+        <figure>
+            <div class="productName"><s>Помідори</s></div>
+            <div class="figureCenter">
+                <div class="productQuantity">2</div>
+            </div>
+            <div class="quantityContainer">
+                <div class="productStatus">Не куплено</div>
+            </div>
+        </figure>
+        <hr/>
+        <figure>
+            <div class="productName">Печиво</div>
+            <div class="figureCenter">
+                <button class="minusButton tooltip" data-tooltip="Зменшити кількість">-<span class="tooltiptext"></span></button>
+                <div class="productQuantity">2</div>
+                <button class="plusButton tooltip" data-tooltip="Збільшити кількість">+<span class="tooltiptext"></span></button>
+            </div>
+            <div class="quantityContainer">
+                <div class="productStatus">Куплено</div>
+                <button class="closeButton tooltip" data-tooltip="Видалити товар"><span class="tooltiptext"></span></button>
+            </div>
+        </figure>
+        <hr/>
+        <figure>
+            <div class="productName" contenteditable="true">Сир</div>
+            <div class="figureCenter">
+                <button class="minusButton tooltip" disabled data-tooltip="Зменшити кількість">-<span class="tooltiptext"></span></button>
+                <div class="productQuantity">1</div>
+                <button class="plusButton tooltip" data-tooltip="Збільшити кількість">+<span class="tooltiptext"></span></button>
+            </div>
+            <div class="quantityContainer">
+                <div class="productStatus">Куплено</div>
+                <button class="closeButton tooltip" data-tooltip="Видалити товар"><span class="tooltiptext"></span></button>
+            </div>
+        </figure>
+    </section>
+    <section id="listSection">
+        <h1>Залишилося</h1>
+        <hr/>
+        <div class="productContainer">
+            <span class="product-item">Печиво<span class="amount">2</span></span>
+            <span class="product-item">Сир<span class="amount">1</span></span>
+        </div>
+        <hr/>
+        <h1>Куплено</h1>
+        <hr/>
+        <div class="productContainer">
+            <span class="product-item"><s>Помідори</s><span class="amount"><s>2</s></span></span>
+        </div>
+    </section>
+</form>
+
+<footer class="badge">
+    <h2 class="badge">Buy List</h2>
+    <span>Created by:</span><br />
+    <span class="nameAuthor">Hordashko Andrii</span>
+</footer>
+</body>
+</html>
