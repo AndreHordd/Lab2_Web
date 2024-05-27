@@ -66,16 +66,6 @@ body {
         min-height: 200px;
     }
 
-    .productContainer {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .product-item {
-        width: 100%;
-        justify-content: space-between;
-    }
 
     .quantityContainer {
         width: 100%;
@@ -127,8 +117,7 @@ section {
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
-    padding-right: 4%;
-    width: 100%;
+    width: 96%;
     max-width: 1000px;
     box-sizing: border-box;
     flex-shrink: 1;
@@ -217,7 +206,6 @@ figure {
     max-height: 25px;
     background-color: #f0f0f0;
     padding: 5px 12px;
-    margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 5px;
@@ -445,9 +433,10 @@ footer.badge:hover {
         display: none;
     }
 
-    .author {
+    .createBy {
         display: none;
     }
+
 
     footer {
         background-color: white;
